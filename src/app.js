@@ -8,6 +8,7 @@ const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
 const app = express()
+const port = process.env.PORT || 3000
 const publicDirectoryPath = path.join(__dirname, '../public')
 
 // set up custom path to the views directory, this is optional, works with root directory called 'views' by default
@@ -89,8 +90,8 @@ app.get('*', (req, res) => {
 })
 
 // starts up the server
-app.listen(3000, () => {
-    console.log('server is up and running 3000')
+app.listen(port, () => {
+    console.log('server is up and running' + port)
 })
 
 // note for self: if getting an error saying that the views folder cannot be located, need to a) rename the views directory to views (by default), or b) make sure the views directory is in the root folder of the project
