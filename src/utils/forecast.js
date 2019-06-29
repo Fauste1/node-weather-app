@@ -10,7 +10,7 @@ const forecast = (longitude, latitude, callback) => {
         if (error) callback('Unable to connect to weather services')
         else if (bodyError) callback(bodyError)
         else {
-            callback(undefined, `Weather is: ${currently.summary}, It's currently ${currently.temperature} degrees celsius`)
+            callback(undefined, `Weather is: ${currently.summary}, It's currently ${currently.temperature} degrees celsius. The chance of rain is ${currently.precipProbability*100} %`)
         }
     })
 }
@@ -22,3 +22,5 @@ module.exports.forecast = forecast
     //     // summary: currently.summary,
     //     // temperature: currently.temperature
     // })
+
+// https://api.darksky.net/forecast/e0fe7f044c17a502d2c5270fda8f150a/-71.0589,42.3601?units=si
