@@ -28,7 +28,7 @@ footer {
     padding: 16px 0;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 header {
