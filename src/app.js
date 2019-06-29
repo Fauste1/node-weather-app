@@ -91,7 +91,7 @@ app.get('*', (req, res) => {
 
 // starts up the server
 app.listen(port, () => {
-    console.log('server is up and running' + port)
+    console.log('server is up and running at port ' + port)
 })
 
 // note for self: if getting an error saying that the views folder cannot be located, need to a) rename the views directory to views (by default), or b) make sure the views directory is in the root folder of the project
