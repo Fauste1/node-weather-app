@@ -10,6 +10,11 @@ body {
     min-height: 100vh;
 }
 
+a {
+    color: #888888;
+    padding: 16px 0;
+}
+
 .main-content {
     flex-grow: 1;
 }
@@ -21,6 +26,9 @@ footer {
     border-top: 1px solid #eee;
     margin-top: 16px;
     padding: 16px 0;
+
+    display: flex;
+    justify-content: space-around;
 }
 
 header {
